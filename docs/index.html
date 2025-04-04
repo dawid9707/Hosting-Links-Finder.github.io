@@ -16,6 +16,8 @@
         --surface: #ffffff;
         --on-surface: #1c1b1f;
         --surface-container: #f3edf7;
+        --surface-alt1: #eaddff;
+        --surface-alt2: #d0bcff;
         --outline: #79747e;
         --border-radius: 12px;
         --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,14 +43,15 @@
         background-color: var(--surface);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow);
-        padding: 2rem;
+        overflow: hidden;
       }
 
       header {
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1.5rem;
+        background-color: var(--surface-container);
+        padding: 2rem;
       }
 
       header img {
@@ -71,8 +74,15 @@
       }
 
       section {
-        margin-bottom: 2rem;
-  text-align: center;
+        padding: 2rem;
+      }
+
+      section:nth-of-type(odd) {
+        background-color: var(--surface-alt1);
+      }
+
+      section:nth-of-type(even) {
+        background-color: var(--surface-alt2);
       }
 
       h2 {
@@ -81,7 +91,7 @@
         color: var(--primary);
       }
 
-      ul {
+      ul, ol {
         padding-left: 1.5rem;
       }
 
@@ -112,7 +122,7 @@
         <img src="https://github.com/dawid9707/Hosting-Links-Finder/raw/main/icon.png" alt="Hosting Links Finder Logo" />
         <h1>Hosting Links Finder</h1>
       </header>
-<center>
+
       <section>
         <h2>What is it?</h2>
         <p>
@@ -142,6 +152,5 @@
         <a class="button" href="https://github.com/dawid9707/Hosting-Links-Finder" target="_blank">Download from GitHub</a>
       </section>
     </div>
-    </center>
   </body>
 </html>
