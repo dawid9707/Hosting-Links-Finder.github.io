@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting Links Finder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #6750a4;
+        --on-primary: #ffffff;
+        --background: #fef7ff;
+        --surface: #ffffff;
+        --on-surface: #1c1b1f;
+        --surface-container: #f3edf7;
+        --surface-alt1: #eaddff;
+        --surface-alt2: #d0bcff;
+        --outline: #79747e;
+        --border-radius: 12px;
+        --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--on-surface);
+        line-height: 1.6;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: var(--surface);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--surface-container);
+        padding: 2rem;
+      }
+
+      header img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: var(--primary);
+      }
+
+      .screenshot {
+        width: 100%;
+        max-width: 800px;
+        border-radius: var(--border-radius);
+        margin: 1rem 0;
+        box-shadow: var(--shadow);
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      section:nth-of-type(odd) {
+        background-color: var(--surface-alt1);
+      }
+
+      section:nth-of-type(even) {
+        background-color: var(--surface-alt2);
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary);
+      }
+
+      ul, ol {
+        padding-left: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      a.button {
+        display: inline-block;
+        margin-top: 1rem;
+        background-color: var(--primary);
+        color: var(--on-primary);
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.2s ease;
+      }
+
+      a.button:hover {
+        background-color: #5a4395;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="https://github.com/dawid9707/Hosting-Links-Finder/raw/main/icon.png" alt="Hosting Links Finder Logo" />
+        <h1>Hosting Links Finder</h1>
+      </header>
+
+      <section>
+        <h2>What is it?</h2>
+        <p>
+          Hosting Links Finder is a Google Chrome extension that fetches file hosting links from websites. It supports popular file hosting services such as:
+        </p>
+        <ul>
+          <li>rapidgator.net</li>
+          <li>vikingfiles.com</li>
+          <li>turbobit.net</li>
+          <li>dailyuploads.net</li>
+          <li>mixdrop.co</li>
+          <li>1fichier.com</li>
+        </ul>
+        <img class="screenshot" src="https://camo.githubusercontent.com/f0648e501bbc87166ad21235ae6e4780b203747f2cd9a1bb7f5b5295a2da563a/68747470733a2f2f692e696d6775722e636f6d2f6d384f4337424b2e706e67" alt="Hosting Links Finder Screenshot" />
+      </section>
+
+      <section>
+        <h2>Install Instructions</h2>
+        <ol>
+          <li>Download the latest release from the GitHub page.</li>
+          <li>Unzip the downloaded archive.</li>
+          <li>
+            In Chrome, go to <strong>Extensions</strong> → enable <strong>Developer Mode</strong> → click <strong>Load unpacked</strong> → select the unzipped
+            <code>Hosting.Links.Finder</code> folder.
+          </li>
+        </ol>
+        <a class="button" href="https://github.com/dawid9707/Hosting-Links-Finder" target="_blank">Download from GitHub</a>
+      </section>
+    </div>
+  </body>
+</html>
